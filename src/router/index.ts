@@ -16,7 +16,7 @@ const router = createRouter({
     {
       path: "/",
       name: "join",
-      component: Join
+      component: Join,
     },
     {
       path:'/users',

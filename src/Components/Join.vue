@@ -16,7 +16,11 @@ const validateUser=()=>{
     })
     if(validateUser){
         console.log('redirect')
-        router.push("/board")
+        // router.push("/board")
+        router.push({
+          name: 'board',
+          query: {name:inputVal.value }
+        })
     } else {
         errMessage.value = 'Please enter valid user'
     }

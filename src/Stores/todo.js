@@ -9,28 +9,32 @@ export const useTodoStore=defineStore({
                 title: 'Todo Title',
                 subTitle: 'Sub title',
                 type: 'bg-primary',
-                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.'
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                createdBy: 'user1'
             },
             {
                 id:2,
                 title: 'Todo Title',
                 subTitle: 'Sub title',
                 type: 'bg-secondary',
-                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.'
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                createdBy: 'user2'
             },
             {
                 id:3,
                 title: 'Todo Title',
                 subTitle: 'Sub title',
                 type: 'bg-success',
-                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.'
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                createdBy: 'user1'
             },
             {
                 id:4,
                 title: 'Todo Title',
                 subTitle: 'Sub title',
                 type: 'bg-warning',
-                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.'
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                createdBy: 'user3'
             }
         ]
     }),
