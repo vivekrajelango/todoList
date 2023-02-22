@@ -16,9 +16,9 @@ const validateUser=()=>{
     })
     if(validateUser){
         console.log('redirect')
-        // router.push("/board")
+        // router.push("/home")
         router.push({
-          name: 'board',
+          name: 'home',
           query: {name:inputVal.value }
         })
     } else {

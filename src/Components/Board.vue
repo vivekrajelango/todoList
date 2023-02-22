@@ -1,9 +1,8 @@
 <script setup>
-import { watch, ref } from 'vue';
+import { watch, ref, onUpdated } from 'vue';
 import { useRoute } from 'vue-router';
 import { useTodoStore } from '@/Stores/todo';
 import Draggable from "vue3-draggable";
-
 
 const route = useRoute();
 const storeTodo = useTodoStore();
@@ -49,6 +48,10 @@ const formSubmit = (e) => {
     storeTodo.addItem(payload.value)
     newForm.value = false;
 }
+
+onUpdated(()=>{
+    console.log('during updates')
+})
 </script>
 <template>
     <span>
